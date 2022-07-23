@@ -3,8 +3,10 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="userDAO" class="com.neta.spring5.dao.impl.UserDAOImpl"/>
 
-<!-- 创建 User 类   -->
-    <bean id="user" class="com.neta.spring5.User"/>
+    <bean id="userService" class="com.neta.spring5.service.UserService">
+        <property name="userDAO" ref="userDAO"/>
+    </bean>
 
 </beans>

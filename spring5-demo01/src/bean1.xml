@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!-- 创建 User 类   -->
+    <bean id="user" class="com.neta.spring5.User">
+        <property name="name" value="yae"/>
+        <property name="gender" value="female"/>
+    </bean>
+
+    <!--有参构造方法注入属性-->
+    <bean id="order" class="com.neta.spring5.Order">
+        <constructor-arg name="name" value="yae"/>
+<!--        <constructor-arg name="name">-->
+<!--            <null/>-->
+<!--        </constructor-arg>-->
+        <constructor-arg name="address" value="beijing"/>
+
+        <property name="address">
+            <value><![CDATA[<<北京>>]]></value>
+        </property>
+
+    </bean>
+
+</beans>

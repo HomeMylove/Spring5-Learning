@@ -7,14 +7,20 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestSpring5 {
 
+    private final   ApplicationContext context = new ClassPathXmlApplicationContext("bean1.xml");
+
     @Test
     public void testAdd(){
         // 加载 配置文件
-        ApplicationContext context = new ClassPathXmlApplicationContext("bean1.xml");
-
         User user = context.getBean("user", User.class);
         user.add();
-
+        System.out.println("user="+user);
     }
 
+
+    @Test
+    public void testOrder(){
+        Object order = context.getBean("order");
+        System.out.println("order="+order);
+    }
 }
