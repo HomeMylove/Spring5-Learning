@@ -35,6 +35,27 @@
                 <value>Redis</value>
             </set>
         </property>
+
+        <!--注入一个 list 集合类型，值是对象-->
+        <property name="courseList">
+            <list>
+                <ref bean="course1"/>
+                <ref bean="course2"/>
+            </list>
+        </property>
+
+
+
     </bean>
+
+    <!--创建多个 course 对象-->
+    <bean id="course1" class="com.neta.spring5.collectiontype.Course">
+        <property name="cname" value="计算机组成原理"/>
+    </bean>
+    <bean id="course2" class="com.neta.spring5.collectiontype.Course">
+        <property name="cname" value="计算机网络"/>
+    </bean>
+
+
 
 </beans>

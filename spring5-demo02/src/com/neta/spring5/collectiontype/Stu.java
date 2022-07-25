@@ -14,12 +14,18 @@ public class Stu {
     // list 类型的属性
     private List<String> list;
 
+    private List<Course> courseList;
+
     private Map<String,String> maps;
 
     private Set<String> sets;
 
     public void setCourses(String[] courses) {
         this.courses = courses;
+    }
+
+    public void setCourseList(List<Course> courseList) {
+        this.courseList = courseList;
     }
 
     public void setList(List<String> list) {
@@ -39,6 +45,7 @@ public class Stu {
         System.out.println("list="+list);
         System.out.println("map="+maps);
         System.out.println("set="+sets);
+        System.out.println("courseList="+courseList);
     }
 
 
