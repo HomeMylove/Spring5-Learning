@@ -1,13 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                          http://www.springframework.org/schema/context   http://www.springframework.org/schema/context/spring-context.xsd
+                          http://www.springframework.org/schema/util   http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+
+
+<!--<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">-->
+<!--        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>-->
+<!--        <property name="url" value="jdbc:mysql://localhost:3306/qqzonedb"/>-->
+<!--        <property name="username" value="root"/>-->
+<!--        <property name="password" value="neta520"/>-->
+<!--    </bean>-->
+
+    <!--引入外部属性文件-->
+    <context:property-placeholder location="classpath:jdbc.properties"/>
 
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
-        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/qqzonedb"/>
-        <property name="username" value="root"/>
-        <property name="password" value="neta520"/>
-    </bean>
+            <property name="driverClassName" value="${driverClassName}"/>
+            <property name="url" value="${url}"/>
+            <property name="username" value="${username}"/>
+            <property name="password" value="${password}"/>
+        </bean>
+
+
+
+
+
+
 
 </beans>

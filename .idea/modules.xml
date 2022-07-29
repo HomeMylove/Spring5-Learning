@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Spring5.iml" filepath="$PROJECT_DIR$/Spring5.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring5-demo01/spring5-demo01.iml" filepath="$PROJECT_DIR$/spring5-demo01/spring5-demo01.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring5-demo02/spring5-demo02.iml" filepath="$PROJECT_DIR$/spring5-demo02/spring5-demo02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring5-demo03/spring5-demo03.iml" filepath="$PROJECT_DIR$/spring5-demo03/spring5-demo03.iml" />
     </modules>
   </component>
 </project>
