@@ -17,7 +17,7 @@ public class UserService {
 
         userDao.reduceMoney();
 
-//        int a = 1/0;
+        int a = 1/0;
 //        异常，则后面的不执行
 
         userDao.addMoney();
