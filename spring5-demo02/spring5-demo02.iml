@@ -9,6 +9,18 @@
         <fileset id="fileset2" name="Bean6" removed="false">
           <file>file://$MODULE_DIR$/src/bean6.xml</file>
         </fileset>
+        <fileset id="fileset3" name="bean1" removed="false">
+          <file>file://$MODULE_DIR$/src/bean1.xml</file>
+        </fileset>
+        <fileset id="fileset4" name="bean2" removed="false">
+          <file>file://$MODULE_DIR$/src/bean2.xml</file>
+        </fileset>
+        <fileset id="fileset5" name="bean3" removed="false">
+          <file>file://$MODULE_DIR$/src/bean3.xml</file>
+        </fileset>
+        <fileset id="fileset6" name="bean4" removed="false">
+          <file>file://$MODULE_DIR$/src/bean4.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>
